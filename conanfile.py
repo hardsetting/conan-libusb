@@ -70,7 +70,7 @@ class LibUSBConan(ConanFile):
 
     def requirements(self):
         if self.settings.os == "Linux":
-            self.requires("libudev1/237@totemic/stable")
+            self.requires("libudev1/229@totemic/stable")
             
     def _build_visual_studio(self):
         with tools.chdir(self._source_subfolder):
